@@ -60,6 +60,9 @@ blockquote {
 	border-left: 3px solid var( --wmui-color-base70 ); /* FIXME: var */
 	margin: 0.8rem 0 0;
 	padding-left: 1.6rem;
+	font-family: var( --font-family-serif--fallback ); /* Fallback */
+	font-size: 2rem;
+	font-style: italic;
 }
 
 p {
@@ -101,16 +104,22 @@ a {
 	a:hover {
 		text-decoration: underline;
 	}
+
 	a:active {
 		color: var( --color-primary--active );
 	}
 
 cite {
 	display: block;
+	margin-top: 0.8em;
+	font-family: var( --font-family-sans-serif--fallback ); /* Fallback */
+	font-size: 1.4rem;
+	font-style: normal;
 }
-cite:before {
-	content: '– ';
-}
+
+	cite:before {
+		content: '— ';
+	}
 
 code {
 	background-color: var( --background-color-code );
