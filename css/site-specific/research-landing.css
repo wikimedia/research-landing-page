@@ -35,7 +35,7 @@
 	margin-top: 1.2rem;
 }
 
-.image__desc {
+.figure__caption {
 	color: var( --color-base--subtle );
 	display: block;
 	margin-top: 0.8rem;
