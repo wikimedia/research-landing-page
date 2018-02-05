@@ -739,7 +739,7 @@ template {
   display: none;
 }
 
-/* ::: Wikimedia Research Landing Page `.wrlp` :::: */
+/* ::: Wikimedia Research Landing Page :::: */
 
 /* ... Navigation ... */
 
@@ -1812,6 +1812,11 @@ code {
 	figure {
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	img {
+		-moz-border-radius: 2px;
+		     border-radius: 2px;
 	}
 }
 
