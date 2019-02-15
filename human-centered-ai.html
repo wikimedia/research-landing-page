@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/wmui-style-guide.min.css">
-	<title>Wikimedia Research - Projects</title>
+	<title>Wikimedia Research - Projects - Human-Centered AI</title>
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/\bjs-off\b/,'js-on'); // no BEM notation thx to IE
 	</script>
@@ -21,7 +21,7 @@
     <link rel="preload" href="fonts/Lato_regular.woff2" as="font" type="font/woff2" crossorigin>
     <script src="js/fonts-loader.js" async></script>
 </head>
-<body class="wrlp page--projects">
+<body class="wrlp page--human-centered-ai page-parent--projects">
 	<header id="header" class="header" role="banner">
 		<div class="content-box">
 			<a href="#content" class="is-aural is-focusable">Jump to content</a>
@@ -45,7 +45,7 @@
 								<li class="nav__sub-item"><a href="community-health.html">Community health</a></li>
 								<li class="nav__sub-item"><a href="increasing-diversity.html">Increasing diversity</a></li>
 								<li class="nav__sub-item"><a href="knowledge-gaps.html">Knowledge gaps</a></li>
-								<li class="nav__sub-item"><a href="human-centered-ai.html">Human-centered AI</a></li>
+								<li class="nav__sub-item is-on"><a href="human-centered-ai.html">Human-centered AI</a></li>
 								<li class="nav__sub-item"><a href="scoring-platform.html">Scoring platform</a></li>
 								<li class="nav__sub-item"><a href="structured-citations.html">Structured citations</a></li>
 								<li class="nav__sub-item"><a href="structured-multimedia-data.html">Structured multimedia data</a></li>
@@ -61,31 +61,44 @@
 			</div>
 			<div class="col col--end">
 				<main id="content" class="content" role="main">
-					<h1 class="page__title">Projects</h1>
-					<p>We support <a href="https://wikimediafoundation.org/wiki/Mission_statement">Wikimedia’s mission</a> by conducting research that broadens our understanding of free knowledge communities, and informs the design of new products, technologies, and programs to support them.</p>
-					<section id="projects-featured" class="features">
-						<h2>Featured Projects</h2>
+					<div class="page__parent-title">Projects</div>
+					<h1 class="page__title">Human-Centered AI</h1>
+					<p class="page__tagline">We are developing methods to ensure that our machine-learning algorithms and data-driven products are fair, transparent, accountable, and useful.</p>
+					<img src="img/patterns/samuel-zeller-483391.jpg" title="image by Samuel Zeller" alt="recommender systems UX image" />
+					<section id="project-overview">
+						<h2>Project overview</h2>
+						  <p>The Research team develops powerful machine-learning algorithms that can improve the coverage and quality of Wikimedia projects and improve the user experience for readers and contributors. Wikimedia Foundation product teams as well as external researchers and community developers use the Research team's machine-learning resources to build tools to connect reader with articles that interest them, help new editors find content and collaborators, and support the volunteers who work to improve the quality of Wikipedia.</p>
+							<p>The aim of this project is to develop best practices and pilot new techniques to effectively prevent, identify, and address bias in the technologies we build, at every stage of the design process.</p>
+							<p>Over the past decade, scientists, journalists, policymakers, and citizens from around the world have grown increasingly concerned about the risks that machine learning and artificial intelligent (AI) systems present. Research has shown how these systems can violate personal privacy, discriminate against disadvantaged groups, perpetuate harmful biases, and disrupt social processes. These harmful impacts can often be traced back to the design of these systems—the data used to train them, the algorithmic techniques that allow the system to learn, the way the system is tested and refined, and the way information is presented to end users.</p>
+							<p>As a mission-driven organization that is committed to openness, transparency and social good, the Wikimedia Foundation has a mandate to ensure that the AI systems we build are ethical and human centered: that they reflect our values, empower our users, and improve our projects.</p>
+					</section>
+					<section id="project-updates" class="updates">
+						<h2>Recent updates</h2>
+						<ol class="list list--updates">
+							<li class="update list__col">
+								<a href="https://meta.wikimedia.org/wiki/Research:Comparing_most_read_and_trending_edits_for_Top_Articles_feature" class="update__card">
+									<h3 class="update__card--title">Battle of the feeds</h3>
+									<time datetime="2017-08" class="update__card--time">Aug 2017</time>
+									<span class="update__card--desc">We tested whether mobile app users preferred a "top article" feed ranked by page views or editing trends. Overall, raters were more interested in, and more familiar with, articles that appeared in the "top read" list.</span>
+								</a>
+							</li>
+						</ol>
+					</section>
+					<section id="project-team" class="features">
+						<h2>Project team</h2>
+							<p><a href="https://meta.wikimedia.org/wiki/User:Jmorgan_(WMF)">Jonathan Morgan</a>, <a href="https://meta.wikimedia.org/wiki/User:Isaac_(WMF)">Isaac Johnson</a></p>
+						<h2>Collaborators</h2>
+							<p>Ellery Wulczyn (Wikimedia Foundation)</p>
+						<h2>Resources and links</h2>
 						<div>
-							<ul class="list--features">
-								<li class="feature">
-									<a href="knowledge-gaps.html" class="feature__card">
-										<h4 class="feature__card--title">Knowledge Gaps</h4>
-										<span class="feature__card--desc">Developing systems to identify content gaps across Wikipedia languages and recommend contributions based on editors’ interests.</span>
-									</a>
-								</li>
-								<li class="feature">
-									<a href="scoring-platform.html" class="feature__card">
-										<h4 class="feature__card--title">Scoring Platform</h4>
-										<span class="feature__card--desc">Enhancing the impact of machine classifiers for quality control while minimizing their detrimental effects.</span>
-									</a>
-								</li>
-								<li class="feature">
-									<a href="structured-citations.html" class="feature__card">
-										<h4 class="feature__card--title">Structured Citations</h4>
-										<span class="feature__card--desc">Building a structured repository of citable sources that can serve Wikipedia and other open knowledge projects.</span>
-									</a>
-								</li>
-							</ul>
+							<ol class="list list--resources">
+								<li class="resource list__col">
+									<span class="resource__title">Research pages</span>
+									<a class="resource__link" href="https://meta.wikimedia.org/wiki/Research:Preventing,_identifying,_and_addressing_bias_in_recommender_systems">Preventing, identifying, and addressing bias in recommender systems</a></a>
+									<a class="resource__link" href="https://meta.wikimedia.org/wiki/Research:Evaluating_RelatedArticles_recommendations">Evaluating Related Article recommendations</a></a>
+									<a class="resource__link" href="https://meta.wikimedia.org/wiki/Research:Comparing_most_read_and_trending_edits_for_Top_Articles_feature">Comparing most read and trending edits for Top Articles feed</a>
+									</li>
+							</ol>
 						</div>
 					</section>
 				</main>
