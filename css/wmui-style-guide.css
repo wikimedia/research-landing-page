@@ -1132,6 +1132,39 @@ template {
 	}
 }
 
+.rectangle-3 {
+  display: inline;
+  float: right;
+  position: static;
+  top: auto;
+  right: auto;
+}
+
+@media ( max-width: 767px ) {
+    .rectangle-3 {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+}
+
+.we-are-hiring {
+  -moz-border-radius: 2px;
+       border-radius: 2px;
+  border: solid 1px #3366cc;
+  background-color: #3366cc;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 10px;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
