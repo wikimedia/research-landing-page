@@ -1142,13 +1142,15 @@ body.cta .rectangle-3 {
 
 @media ( max-width: 767px ) {
     body.cta .page {
-        margin-top: 12rem;
+        margin-top: 9.3rem;
     }
     body.cta .rectangle-3 {
         display: block;
         float: none;
         position: relative;
         text-align: center;
+        margin-left: -3.2rem;
+        margin-right: -3.2rem;
     }
     body.cta .we-are-hiring {
         display: block;
