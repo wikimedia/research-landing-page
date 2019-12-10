@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/wmui-style-guide.min.css?201905111509">
-	<title>Wikimedia Research - Programs - Structured Citations for the Sum of All Human Knowledge</title>
+	<title>Wikimedia Research - Programs - Knowledge Integrity</title>
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/\bjs-off\b/,'js-on'); // no BEM notation thx to IE
 	</script>
@@ -21,7 +21,7 @@
 	<link rel="preload" href="fonts/Lato_regular.woff2" as="font" type="font/woff2" crossorigin>
 	<script src="js/fonts-loader.js" async></script>
 </head>
-<body class="cta wrlp page--structured-citations page-parent--projects">
+<body class="cta wrlp page--knowledge-integrity page-parent--projects">
 	<header id="header" class="header" role="banner">
 		<div class="content-box">
 			<a href="#content" class="is-aural is-focusable">Jump to content</a>
@@ -43,8 +43,8 @@
 						<li class="nav__item is-on"><a href="projects.html">Programs</a>
 							<ul class="nav__sub-items">
 								<li class="nav__sub-item"><a href="knowledge-gaps.html">Knowledge gaps</a></li>
-								<li class="nav__sub-item"><a href="knowledge-integrity.html">Knowledge integrity</a></li>
-								<li class="nav__sub-item"><a href="foundational.html">Foundational</a></li>
+								<li class="nav__sub-item is-on"><a href="knowledge-integrity.html">Knowledge integrity</a></li>
+								<li class="nav__sub-item"><a href="foundational.html">Foundational work</a></li>
 							</ul>
 						</li>
 						<li class="nav__item"><a href="publications.html">Publications</a></li>
@@ -57,15 +57,15 @@
 			<div class="col col--end">
 				<main id="content" class="content" role="main">
 					<div class="page__parent-title">Programs</div>
-					<h1 class="page__title">Structured Citations for the Sum of All Human Knowledge</h1>
-					<p class="page__tagline">We are building a structured repository of citable sources that can serve Wikipedia and other open knowledge projects.</p>
-										<img src="img/patterns/scott-webb-256482.jpg" title="image by Scott Webb" alt="structured citations image" />
+					<h1 class="page__title">Improve Knowledge Integrity</h1>
+					<p class="page__tagline">We are working to extend the verifiability of content and increase resilience to misinformation.</p>
+										<img src="img/patterns/scott-webb-256482.jpg" title="image by Scott Webb" alt="knowledge integrity image" />
 					<section id="project-overview">
 						<h2>Project overview</h2>
-							<p>Verifiability is critical to open knowledge projects like Wikipedia, and citations are central to their success. Yet, methods used to cite information are outdated. Citations in Wikimedia projects are hard to discover, maintain, reuse, analyze, and discuss. The contributor community has long been in agreement that citation management needed improvement.</p>
-							<p>Efforts are now underway to build a stronger technological foundation for representing sources and managing citations in Wikimedia projects. The introduction of <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> marked the beginning of an organized attempt to improve structured citations.</p>
-							<p>In 2016, we introduced an initiative called <a href="https://meta.wikimedia.org/wiki/WikiCite">WikiCite</a>. Its aim is to grow and support a community of contributors who are invested in creating technological solutions to the verifiability issue. We plan to build an open repository of sources&mdash;using Wikidata as the primary infrastructure&mdash;that can serve all open knowledge projects, including Wikipedia.</p>
-							<p>We strive to develop a deeper understanding of how Wikimedia contributors use sources and to improve technological support for sources and citations.</p>
+							<p>The strategic direction of “Knowledge as a Service” envisions a world in which platforms and tools are available to allies and partners to “organize and exchange free, trusted knowledge beyond Wikimedia”. Achieving this goal requires not only new infrastructure for representing, curating, linking, and disseminating knowledge, but also efficient and scalable strategies to preserve the reliability and integrity of this knowledge. Technology platforms across the web are looking at Wikipedia as the neutral arbiter of information, but as Wikimedia aspires to extend its scope and scale, the possibility that parties with special interests will manipulate content, or bias to go undetected, becomes material.</p>
+							<p>We have been leading projects to help our communities represent, curate, and understand information provenance in Wikimedia projects more efficiently. We are conducting novel research on why editors source information, and how readers access sources; we are developing algorithms to identify statements in need of sources and gaps in information provenance; we are designing data structures to represent, annotate, and analyze source metadata in machine-readable formats as well as tools to monitor in real time changes made to references across the Wikimedia ecosystem.</p>
+
+							<p>More information can be found in our <a href="https://meta.wikimedia.org/wiki/File:Knowledge_Integrity_-_Wikimedia_Research_2030.pdf">white paper</a>.</p>
 					</section>
 					<section id="project-updates" class="updates">
 						<h2>Recent updates</h2>
@@ -184,6 +184,13 @@
 								</a>
 							</li>
 							<li class="update list__col">
+								<a href="https://meta.wikimedia.org/wiki/Research:Sockpuppet_detection_in_Wikimedia_projects" class="update__card">
+									<h3 class="update__card--title">Sockpuppet detection in Wikimedia projects</h3>
+									<time datetime="2017-09" class="update__card--time">Sep 2017</time>
+									<span class="update__card--desc">We started a formal collaboration with researchers at Stanford University aiming to design and evaluate algorithmic strategies to identify potential sockpuppet accounts on Wikipedia. The aim is to develop high-precision detection models using previously identified, malicious sockpuppets.</span>
+								</a>
+							</li>
+							<li class="update list__col">
 								<a href="https://i4oc.org/" class="update__card">
 									<h3 class="update__card--title">Initiative for Open Citations</h3>
 									<time datetime="2017-04" class="update__card--time">Apr 2017</time>
@@ -193,12 +200,13 @@
 						</ol>
 					</section>
 					<section id="project-meta" class="project-meta">
-						<h2>Project team</h2>
+						<!--<h2>Project team</h2>
 							<p><a href="https://meta.wikimedia.org/wiki/User:Dario_(WMF)">Dario Taraborelli</a>, <a href="https://meta.wikimedia.org/wiki/User:Miriam_(WMF)">Miriam Redi</a>, <a href="https://meta.wikimedia.org/wiki/User:Halfak_(WMF)">Aaron Halfaker</a></p>
 						<h2>Collaborators</h2>
-							<p>Besnik Fetahu (Leibniz Universität Hannover), Michele Catasta (Stanford University), Anna Filippova (Carnegie Mellon University), Andrea Forte (Drexel University), Meen Chul Kim (Drexel University), Jure Leskovec (Stanford University), Tiziano Piccardi (EPFL), Robert West (EPFL)</p>
+							<p>Besnik Fetahu (Leibniz Universität Hannover), Michele Catasta (Stanford University), Anna Filippova (Carnegie Mellon University), Andrea Forte (Drexel University), Meen Chul Kim (Drexel University), Jure Leskovec (Stanford University), Tiziano Piccardi (EPFL), Robert West (EPFL)</p>-->
 						<h2>Publications</h2>
 						<ul class="publications">
+							<li>Miriam Redi, Besnik Fetahu, Jonathan Morgan, Dario Taraborelli</>. 2019. <a href="https://arxiv.org/abs/1902.11116">Citation Needed: A Taxonomy and Algorithmic Assessment of Wikipedia's Verifiability</a>. <em>In Proceedings of The Web Conference 2019 (WWW '19)</em>. <a href="https://doi.org/10.1145/3308558.3313618">https://doi.org/10.1145/3308558.3313618</a></li>
 							<li>Dario Taraborelli, Lydia Pintscher, Daniel Mietchen, and Sarah Rodlund. 2017. <a href="https://commons.wikimedia.org/wiki/File:WikiCite_2017_report.pdf">WikiCite 2017 Report</a>. <em>figshare</em>. <a href="https://doi.org/10.6084/m9.figshare.5648233">https://doi.org/10.6084/m9.figshare.5648233</a></li>
 							<li>Dario Taraborelli, Jonathan Dugan, Lydia Pintscher, Daniel Mietchen, and Cameron Neylon. 2016. <a href="https://commons.wikimedia.org/wiki/File:WikiCite_2016_report.pdf">WikiCite 2016 Report</a>. <em>figshare</em>. <a href="https://doi.org/10.6084/m9.figshare.4042530">https://doi.org/10.6084/m9.figshare.4042530</a></li>
 						</ul>
@@ -206,11 +214,12 @@
 						<div>
 							<ol class="list list--resources">
 								<li class="resource list__col">
-									<span class="resource__title">Home page</span>
-									<a class="resource__link" href="https://meta.wikimedia.org/wiki/WikiCite">WikiCite on Meta</a>
+									<!--<span class="resource__title">Home page</span>
+									<a class="resource__link" href="https://meta.wikimedia.org/wiki/WikiCite">WikiCite on Meta</a>-->
 									<span class="resource__title">Research pages</span>
 									<a class="resource__link" href="https://meta.wikimedia.org/wiki/Research:Characterizing_Wikipedia_Citation_Usage">Characterizing Wikipedia Citation usage</a>
 									<a class="resource__link" href="https://meta.wikimedia.org/wiki/Research:Identification_of_Unsourced_Statements">Identification of Unsourced Statements</a>
+									<a class="resource__link" href="https://meta.wikimedia.org/wiki/Research:Sockpuppet_detection_in_Wikimedia_projects">Sockpuppet detection in Wikimedia projects</a>
 									<a class="resource__link" href="https://meta.wikimedia.org/wiki/Research:Understanding_the_context_of_citations_in_Wikipedia">Understanding the context of citations in Wikipedia</a>
 									</li>
 								<li class="resource list__col">

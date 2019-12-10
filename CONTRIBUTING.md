@@ -29,4 +29,3 @@ Push to your fork and [submit a pull request][pr]
 [pr]: https://github.com/wikimedia/WikimediaUI-Style-Guide/compare
 
 In order for the pushed changes to be available live, members of Wikimedia design are going to review it first.
-
