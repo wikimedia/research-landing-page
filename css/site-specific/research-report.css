@@ -1,0 +1,318 @@
+.border--top {
+	border-color: #c8ccd1;
+	border-style: solid;
+	border-width: 1px 0 0;
+	margin-top: 1.6em;
+}
+
+.date__title {
+	font-weight: 300;
+	font-size: 1.4rem;
+	color: #72777d;
+}
+
+.list--projects {
+	position: relative;
+	margin: 2.4rem 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.list--projects li + li {
+	margin-top: 4rem;
+}
+
+.project__card--title,
+.event__card--title {
+	margin-top: 0;
+	font-size: 2.8rem;
+	font-weight: 400;
+}
+
+.fonts-loaded h2.page__title {
+	font-family: serif;
+	font-size: 3.2rem;
+	font-weight: 400;
+	margin-top: -.6rem;
+}
+
+.fonts-loaded h2.page__title,
+.fonts-loaded .project__card--title,
+.fonts-loaded .event__card--title {
+	font-family: Charter, serif;
+}
+
+.project__card--desc,
+.event__card--desc {
+	color: #222;
+	display: block;
+	margin-top: .8rem;
+	/*
+	font-size: 1.4rem;
+	line-height: 1.6;
+*/
+}
+
+.event__card--more {
+	font-size: 1.4rem;
+	color: #36c;
+	display: block;
+	margin-top: 1.2rem;
+}
+
+.subtitle {
+	font-size: 1.6rem;
+	color: #72777d;
+}
+
+#projects .project__card--desc {
+	color: #72777d;
+}
+
+#projects li > h2 {
+	display: none;
+}
+
+.inline--img {
+	position: relative;
+	z-index: 2;
+}
+
+.inline--img img {
+	width: 10rem;
+	position: absolute;
+	bottom: 100%;
+	margin-bottom: .5rem;
+	right: 100%;
+	margin-right: -.5rem;
+	pointer-events: none;
+	display: none;
+}
+
+.inline--img:hover img {
+	display: block;
+}
+
+#people h2 + p {
+	margin-top: 2.4rem;
+}
+
+.color--light {
+	color: #72777d;
+}
+
+.new--batch {
+	color: #72777d;
+	font-weight: 300;
+}
+
+.margin--top {
+	margin-top: 3.2rem;
+}
+
+#main .subtitle {
+	margin-top: 3.2rem;
+}
+
+#main h2 + p,
+#trends h2 + p,
+#collaborations h2 + p,
+#donors h2 + p,
+#touch h2 + p {
+	margin-top: 2.4rem;
+}
+
+.collaborations,
+.donors,
+.touch {
+	list-style-type: disc;
+	margin: .8rem 0;
+	padding: 0 1.6rem;
+}
+
+.trends li,
+.collaborations li,
+.donors li,
+.touch li {
+	margin-top: 1.2rem;
+}
+
+.trends li:first-child,
+.collaborations li:first-child,
+.donors li:first-child,
+.touch li:first-child {
+	margin-top: 0;
+}
+
+.page__tagline {
+	margin-bottom: 3rem;
+}
+
+.print--in {
+	display: none !important;
+}
+
+@media (min-width: 414px) {
+
+	#events .feature {
+		width: 25rem;
+	}
+
+	#events .feature:nth-child(3n+1) {
+		clear: none;
+	}
+
+	#events .feature:nth-child(3n) {
+		margin-right: 2.4rem;
+	}
+
+	#events .feature:nth-child(2n+1) {
+		clear: left;
+	}
+
+	#events .feature:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 992px) {
+
+	#events .feature {
+		width: 28rem;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	#events .feature {
+		width: 36rem;
+	}
+}
+
+@media (max-width: 767px) {
+	body.cta .page {
+		margin-top: 6.4rem;
+	}
+}
+
+@media print {
+
+	@page {
+		size: auto;
+		margin: 30mm 20mm 30mm;
+	}
+
+	.print--out {
+		display: none !important;
+	}
+
+	.print--in {
+		display: block !important;
+	}
+
+	.print--in.inline--text,
+	.print--in.inline--text a {
+		display: inline !important;
+	}
+
+	.page {
+		box-shadow: none;
+	}
+
+	body.cta .page {
+		margin-top: 2rem;
+	}
+
+	#projects li + li > h2 {
+		display: block;
+		margin-bottom: 2.4rem;
+	}
+
+	#main h2 {
+		margin-top: 0;
+	}
+
+	.border--top {
+		border-top: none;
+	}
+
+	.member__picture a {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+
+	#cover,
+	#contents {
+		display: flex !important;
+		justify-content: center;
+		align-items: stretch;
+		height: 100vh;
+		padding: 5vh 0 10vh;
+		position: relative;
+	}
+
+	#cover > .in,
+	#contents > .in {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#logo--print {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		margin: 0;
+		margin-left: -15mm;
+		width: 30mm;
+	}
+
+	#cover h2 {
+		font-size: 4.4rem;
+		margin-top: 12vh;
+	}
+
+	#cover h2 + img {
+		display: block;
+		width: 85%;
+		margin: 3rem auto 0;
+	}
+
+	#contents h2 {
+		font-size: 3.6rem;
+		margin-top: 12vh;
+	}
+
+	#main,
+	#projects,
+	#projects li,
+	#people,
+	#events,
+	#collaborations {
+		page-break-after: always;
+	}
+
+	.event__card--more,
+	.header,
+	footer {
+		display: none;
+	}
+
+	#events .feature {
+		width: auto;
+		float: none;
+	}
+	
+	.member {
+		width: 15rem;
+	}
+	
+	.member img {
+		width: 15rem;
+		height: 11.252rem;
+	}
+}
