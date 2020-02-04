@@ -383,12 +383,12 @@ body.cta .rectangle-3 {
         margin-left: -3.2rem;
         margin-right: -3.2rem;
     }
-    body.cta .we-are-hiring {
+    body.cta .cta-button {
         display: block;
     }
 }
 
-body.cta .we-are-hiring {
+body.cta a.cta-button {
     border-radius: 2px;
     border: solid 1px #3366cc;
     background-color: #3366cc;
