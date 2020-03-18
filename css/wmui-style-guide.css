@@ -1152,12 +1152,12 @@ body.cta .rectangle-3 {
         margin-left: -3.2rem;
         margin-right: -3.2rem;
     }
-    body.cta .cta-button {
+    body.cta .we-are-hiring {
         display: block;
     }
 }
 
-body.cta a.cta-button {
+body.cta .we-are-hiring {
     -moz-border-radius: 2px;
          border-radius: 2px;
     border: solid 1px #3366cc;
