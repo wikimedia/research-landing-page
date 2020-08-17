@@ -8,7 +8,7 @@
   "homepage": "https://www.mediawiki.org/wiki/Wikimedia_Research",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wikimedia-research/landing-page.git"
+    "url": "https://github.com/wikimedia/research-landing-page.git"
   },
   "private": true,
   "license": "MIT",
