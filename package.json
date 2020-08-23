@@ -14,6 +14,10 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.5.2",
+    "eslint": "^5.14.1",
+    "eslint-config-wikimedia": "^0.11.0",
+    "eslint-plugin-jsdoc": "^4.1.0",
+    "eslint-plugin-json": "^1.4.0",
     "grunt": "1.0.1",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-watch": "1.0.0",
@@ -34,6 +38,7 @@
     "fontfaceobserver": "^2.0.9"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt && npm run eslint",
+    "eslint": "node_modules/.bin/eslint --max-warnings 0 --ext .js ./js/"
   }
 }
