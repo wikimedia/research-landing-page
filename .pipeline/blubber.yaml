@@ -1,0 +1,10 @@
+version: v4
+variants:
+  all-dependencies:
+    base: docker-registry.wikimedia.org/nodejs-devel
+    copies: [local]
+    node:
+      requirements: [package.json, package-lock.json]
+  npm-run:
+    includes: [all-dependencies]
+    entrypoint: [npm, test]

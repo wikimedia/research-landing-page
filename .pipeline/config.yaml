@@ -1,0 +1,7 @@
+pipelines:
+  test:
+    blubberfile: blubber.yaml
+    stages:
+      - name: run-test
+        build: npm-run
+        run: true
