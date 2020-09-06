@@ -8,3 +8,5 @@ variants:
   npm-run:
     includes: [all-dependencies]
     entrypoint: [npm, test]
+    runs:
+      insecurely: true
