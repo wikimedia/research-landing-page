@@ -1,7 +1,7 @@
 version: v4
 variants:
   all-dependencies:
-    base: docker-registry.wikimedia.org/nodejs-devel
+    base: docker-registry.wikimedia.org/nodejs10-devel
     copies: [local]
     node:
       requirements: [package.json, package-lock.json]
