@@ -117,12 +117,14 @@
 #main h2 + p,
 #trends h2 + p,
 #collaborations h2 + p,
+#reports h2 + p,
 #donors h2 + p,
 #touch h2 + p {
 	margin-top: 2.4rem;
 }
 
 .collaborations,
+.reports,
 .donors,
 .touch {
 	list-style-type: disc;
@@ -132,6 +134,7 @@
 
 .trends li,
 .collaborations li,
+.reports li,
 .donors li,
 .touch li {
 	margin-top: 1.2rem;
@@ -139,6 +142,7 @@
 
 .trends li:first-child,
 .collaborations li:first-child,
+.reports li:first-child,
 .donors li:first-child,
 .touch li:first-child {
 	margin-top: 0;
@@ -306,11 +310,11 @@
 		width: auto;
 		float: none;
 	}
-	
+
 	.member {
 		width: 15rem;
 	}
-	
+
 	.member img {
 		width: 15rem;
 		height: 11.252rem;
